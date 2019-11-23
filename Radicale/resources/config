@@ -1,0 +1,23 @@
+[auth]
+type = htpasswd
+htpasswd_filename = /etc/radicale/users
+# Encryption method used in the htpasswd file
+htpasswd_encryption = bcrypt
+# Average delay after failed login attempts in seconds
+delay = 1
+
+[server]
+hosts = 0.0.0.0:5232
+max_connections = 20
+# 100 Megabyte
+max_content_length = 100000000
+# 30 seconds
+timeout = 30
+# SSL Encryption
+ssl=true
+certificate= /etc/radicale/my-server.crt
+key = /etc/radicale/my-server.key
+# certificate_authority = /etc/radicale/my-server-ca.crt
+
+[storage]
+# filesystem_folder = /data

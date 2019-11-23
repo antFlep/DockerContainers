@@ -2,18 +2,16 @@ version: "3.5"
 
 services:
 
-  git-server:
-  
+  git:
+    container_name: git
+    hostname: git
     build:
       context: ./
-      
     restart: always
-    
     ports:
     - "50022:22/tcp"
-    
     volumes:
     - repositories:/repositories
-    
+
 volumes:
   repositories:

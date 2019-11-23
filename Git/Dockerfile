@@ -34,7 +34,7 @@ RUN ssh-keygen -A && \
     chmod 600 /home/git/.ssh/authorized_keys
     # echo git:${defaultpassword} | chpasswd
 
-COPY ./ressources /git
+COPY ./resources /git
 
 VOLUME /repositories
 EXPOSE 22/tcp

@@ -1,0 +1,19 @@
+version: "3.5"
+
+services:
+
+  radicale: 
+    container_name: radicale 
+    hostname: radicale
+    build:
+      context: ./      
+    restart: always    
+    ports:
+    - "5232:5232/tcp"    
+    volumes:
+    - radicale-data:/var/lib/radicale
+    - radicale-config:/etc/radicale
+
+volumes:
+  radicale-config:
+  radicale-data:
