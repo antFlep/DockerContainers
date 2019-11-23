@@ -1,2 +1,2 @@
 # do not upload the public keys
-resources/authorized-keys
+resources/authorized_keys
