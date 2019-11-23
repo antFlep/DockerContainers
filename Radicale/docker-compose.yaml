@@ -11,9 +11,9 @@ services:
     ports:
     - "5232:5232/tcp"    
     volumes:
-    - radicale-data:/var/lib/radicale
-    - radicale-config:/etc/radicale
+    - config:/etc/radicale
+    - data:/var/lib/radicale
 
 volumes:
-  radicale-config:
-  radicale-data:
+  config:
+  data:
