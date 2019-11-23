@@ -10,7 +10,7 @@ services:
     restart: always
     
     ports:
-    - "50022:22"
+    - "50022:22/tcp"
     
     volumes:
     - repositories:/repositories

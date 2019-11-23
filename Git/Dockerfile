@@ -37,6 +37,6 @@ RUN ssh-keygen -A && \
 COPY ./ressources /git
 
 VOLUME /repositories
-EXPOSE 22
+EXPOSE 22/tcp
 
 ENTRYPOINT ["/git/entrypoint.sh"]
