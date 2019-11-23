@@ -7,7 +7,7 @@ rm Dockerfile
 mkdir resources
 
 # generate certificates for ssh
-./utils/certgen.sh
+# ./utils/certgen.sh
 
 # generate user passwords with apaches htpasswd tool
 htpasswd -B -c /resources/users username
