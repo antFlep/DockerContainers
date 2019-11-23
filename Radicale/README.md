@@ -1,6 +1,6 @@
 # Radicale Server
 
-Creating a 'secure' radicale server image using the official radicale Dockerfile found on their GitHub page.  
+Creating a *secure* radicale server image using the official radicale Dockerfile found on their GitHub page.  
 [https://radicale.org/](https://radicale.org/)
 
 ## Requirements

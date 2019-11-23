@@ -7,7 +7,7 @@ rm resources/authorized_keys/$filename.pub
 
 ssh-keygen -t rsa -b 4096 -f $filename
 
-mv $filename.pub resources/authorized-keys/
+mv $filename.pub resources/authorized_keys/
 # move private key to home folder
 # put it the .ssh folder of the client machines
 mv $filename ~/
