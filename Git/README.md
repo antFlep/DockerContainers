@@ -9,6 +9,7 @@ A simple docker-image creating a git server based on:
   * Put public keys into `/ressources/authorized-keys` before building
   * Or bind mount your public keys into `git/authorized-keys`
   * Any keys in those directories will be added to `authorized_keys`
+  * Do not forget to add the private keys to the ssh-agent using `ssh-add` if it is password protected
 * The git user cannot execute any commands on the container
 * The git user can only execute git commands.
 
