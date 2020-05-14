@@ -1,0 +1,18 @@
+version: "3.5"
+
+services:
+
+  samba:
+    image: custom-samba
+    container_name: samba
+
+    build:
+      context: ./
+
+    restart: always
+    
+    volumes:
+    - /mnt/MainStorage:/samba
+    
+    ports:
+    - 445:445/tcp
